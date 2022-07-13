@@ -33,7 +33,7 @@ io.on("connection", function (socket) {
   setInterval(function () {
     console.log("sending message to client");
     socket.emit("server_message", randomMessages());
-  }, 10000);
+  }, 3000);
 });
 
 // iniciamos el servidor
