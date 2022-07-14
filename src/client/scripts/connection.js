@@ -110,9 +110,3 @@ socket.on("server_message", function (data) {
   // este evento
   pushMessages(data, "server");
 });
-
-// escuchamos la respuesta que nos dió el servidor
-// cuando enviamos un mensaje
-socket.on("listen_client", function (data) {
-  pushMessages(data, "server");
-});
