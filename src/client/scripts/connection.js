@@ -107,6 +107,5 @@ socket.on("connect_error", () => {
 
 // escuchamos lo que dice el servidor
 socket.on("server_message", function (data) {
-  // este evento
   pushMessages(data, "server");
 });
